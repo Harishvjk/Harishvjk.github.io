@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  background-color: cyan;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+table{
+border-collapse: collapse;
+}
+.pad{
+padding: 10px;
+}
+.middle{
+text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:-5px;
+  margin-right:-5px;
+}
+  
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.scaled {
+  transform: scale(1.3);
+}
+.content{
+margin-right: auto;
+}
+.v1 {
+border-left: 6px solid cyan;
+border-right: 6px solid cyan;
+height: 900px;
+}
+</style>
+</head>
+<body>
+<div class="v1">
+<div class="content">
+<center><font size="10">Smashing Survey</font></center>
+<hr>
+<div class="row">
+<div class="column">
+<div class="scaled">
+<table align="center"><br><br><br><br>
+<tr>
+<td><label for="name">Name<font color="red">*</font></label></td>
+</tr>
+<tr>
+<td><input type="text" id="name" name="fname"></input>
+<input type="text" name="lname"></input></td>
+</tr>
+<tr>
+<td><font color="grey" size="2">First<font color="white">________________________</font>Last</font></td>
+</tr>
+<tr>
+<td><label for="email"><br>Email<font color="red">*</font></label></td>
+</tr>
+<tr>
+<td><input type="text" id="email" name="Email"></input></td>
+</tr>
+<tr>
+<td><br>How old are you?<font color="red">*</font></td>
+</tr>
+<tr>
+<tr><td><br><input type="radio" name="agerange" value="1">Under 18</input></td></tr>
+<tr><td><input type="radio" name="agerange" value="2">18-24</input></td></tr>
+<tr><td><input type="radio" name="agerange" value="3">25-34</input></td></tr>
+<tr><td><input type="radio" name="agerange" value="4">35-44</input></td></tr>
+<tr><td><input type="radio" name="agerange" value="5">45-54</input></td></tr>
+<tr><td><input type="radio" name="agerange" value="6">55-64</input></td></tr>
+<tr><td><input type="radio" name="agerange" value="7">65 or over</input></td></tr>
+</tr>
+<tr>
+<td><label for="color"><br>What is your favourite color?<font color="red">*</font></label></td>
+</tr>
+<tr>
+<td><br><select id="color">
+<option value="1">Blue</option>
+<option value="2">Red</option>
+<option value="3">Black</option>
+<option value="4">Green</option>
+<option value="5">Yellow</option>
+<option value="6">Purple</option></select></td>
+</table>
+</div>
+</div>
+<div class="column">
+<div class="scaled">
+<table><br><br><br><br>
+<tr>
+<td><label for="seasons">What seasons do you like best?<font color="red">*</font></label></td>
+</tr>
+<tr><td><br><input type="checkbox" id="seasons" value="1">Spring</input></td></tr>
+<tr><td><input type="checkbox" id="seasons" value="2">Summer</input></td></tr>
+<tr><td><input type="checkbox" id="seasons" value="3">Autumn</input></td></tr>
+<tr><td><input type="checkbox" id="seasons" value="4">Winter</input>
+</td>
+</tr>
+<tr>
+<td><br>How much do you agree with the following statements?</td>
+</tr>
+<table width="70px" style="width:55%">
+<thead>
+<tr height="50px" bgcolor="#f2f1f1">
+<th style="width:30%"></th>
+<th>Strongly Agree</th>
+<th style="width:20%">Agree</th>
+<th style="width:20%">Neutral</th>
+<th style="width:20%">Disagree</th>
+<th>Strongly Disagree</th></tr>
+</thead>
+<tbody>
+<tr class="middle" height="50px"><td align="left">First statement<font color="red">*</font></td>
+<td><input type="radio" name="SA" value="1"></input></td>
+<td><input type="radio" name="SA" value="2"></input></td>
+<td><input type="radio" name="SA" value="3"></input></td>
+<td><input type="radio" name="SA" value="4"></input></td>
+<td><input type="radio" name="SA" value="5"></input></td>
+</tr>
+<tr bgcolor="#fff6b6" class="middle" height="50px"><td align="left">Second statement<font color="red">*</font></td>
+<td><input type="radio" name="SAS" value="1"></input></td>
+<td><input type="radio" name="SAS" value="2"></input></td>
+<td><input type="radio" name="SAS" value="3"></input></td>
+<td><input type="radio" name="SAS" value="4"></input></td>
+<td><input type="radio" name="SAS" value="5"></input></td>
+</tr>
+<tr class="middle" height="50px"><td align="left">Third statement<font color="red">*</font></td>
+<td><input type="radio" name="SASS" value="1"></input></td>
+<td><input type="radio" name="SASS" value="2"></input></td>
+<td><input type="radio" name="SASS" value="3"></input></td>
+<td><input type="radio" name="SASS" value="4"></input></td>
+<td><input type="radio" name="SASS" value="5"></input></td>
+</tr>
+</tbody>
+</table>
+<tr>
+<td><br><button class="button">Send</button></td></tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
